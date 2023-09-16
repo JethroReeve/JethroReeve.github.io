@@ -6,9 +6,9 @@
 
 (function($) {
 	const texts = [
-		{text: "give Labour the data competence needed for 2025", target: "target1"},
-		{text: "give the data competence ", target: "target2"},
-		{text: "give Labour the data", target: "target3"}
+		{text: "provide clarity on political data for 2025", target: "target1"},
+		{text: "use AI to give politicians a modern edge", target: "target2"},
+		{text: "support a democracy that thinks twice", target: "target3"}
 	];
 	
 	let currentText = 0;
@@ -21,34 +21,36 @@
 			if (index < text.length) {
 				document.getElementById(target).textContent += text.charAt(index);
 				index++;
-				setTimeout(typeText, 1900);  // Adjust speed here
+				setTimeout(typeText, 250);  // Adjust speed here
 			} else {
-				blinkCursor(target);
 				index = 0;
 				currentText++;
 				if (currentText < texts.length) {
-					setTimeout(typeText, 2000);  // Delay before starting next text
+					setTimeout(typeText, 1000);  // Delay before starting next text
 				}
 			}
 		}
 	}
 	
-	function blinkCursor(targetId) {
-		const target = document.getElementById(targetId);
+	function blinkCursor(targetIds) {
 		setInterval(() => {
-			if (target.style.borderRightStyle === "solid") {
-				target.style.borderRightStyle = "transparent";
-			} else {
-				target.style.borderRightStyle = "solid";
-			}
+			targetIds.forEach(targetId => {
+				const target = document.getElementById(targetId);
+				if (target.style.borderRightStyle === "solid") {
+					target.style.borderRightStyle = "transparent";
+				} else {
+					target.style.borderRightStyle = "solid";
+				}
+			});
 		}, 500);  // Adjust blink speed here
 	}
 	
 	// Start typing the first text
 	typeText();
 	
-
-	typeText();
+	// Start blinking cursor for all targets
+	blinkCursor(["target1", "target2", "target3"]);
+	
 
 
 	var	$window = $(window),
