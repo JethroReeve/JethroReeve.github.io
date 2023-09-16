@@ -5,21 +5,36 @@
 */
 
 (function($) {
-	const text = "My projects give Labour the data competence needed for 2025";
+	const texts = [
+		{text: "give Labour the data competence needed for 2025", target: "target1"},
+		{text: "give the data competence ", target: "target2"},
+		{text: "give Labour the data", target: "target3"}
+	];
+	
+	let currentText = 0;
 	let index = 0;
-
+	
 	function typeText() {
-		if (index < text.length) {
-			document.getElementById("target").textContent += text.charAt(index);
-			index++;
-			setTimeout(typeText, 250);  // Adjust speed here
-		} else {
-			blinkCursor();
+		if (currentText < texts.length) {
+			const { text, target } = texts[currentText];
+			
+			if (index < text.length) {
+				document.getElementById(target).textContent += text.charAt(index);
+				index++;
+				setTimeout(typeText, 250);  // Adjust speed here
+			} else {
+				blinkCursor(target);
+				index = 0;
+				currentText++;
+				if (currentText < texts.length) {
+					setTimeout(typeText, 1000);  // Delay before starting next text
+				}
+			}
 		}
 	}
-
-	function blinkCursor() {
-		const target = document.getElementById("target");
+	
+	function blinkCursor(targetId) {
+		const target = document.getElementById(targetId);
 		setInterval(() => {
 			if (target.style.borderRightStyle === "solid") {
 				target.style.borderRightStyle = "transparent";
@@ -28,6 +43,10 @@
 			}
 		}, 500);  // Adjust blink speed here
 	}
+	
+	// Start typing the first text
+	typeText();
+	
 
 	typeText();
 
