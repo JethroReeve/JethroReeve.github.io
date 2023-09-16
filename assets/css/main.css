@@ -232,7 +232,6 @@ hr {
 .typing {
   white-space: nowrap;
   overflow: hidden;
-  border-right: .2em solid;
 }
 
 /* Row */
