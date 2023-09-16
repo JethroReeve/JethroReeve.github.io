@@ -26,7 +26,7 @@
 				index = 0;
 				currentText++;
 				if (currentText < texts.length) {
-					setTimeout(typeText, 1000);  // Delay before starting next text
+					setTimeout(typeText, 100);  // Delay before starting next text
 				}
 			}
 		}
