@@ -7,13 +7,12 @@
 (function($) {
 	const text = "My projects give Labour the data competence needed for 2025";
 	let index = 0;
-	console.log('hi');
 
 	function typeText() {
 		if (index < text.length) {
 			document.getElementById("target").textContent += text.charAt(index);
 			index++;
-			setTimeout(typeText, 100);  // Adjust speed here
+			setTimeout(typeText, 250);  // Adjust speed here
 		} else {
 			blinkCursor();
 		}
