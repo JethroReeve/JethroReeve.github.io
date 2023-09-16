@@ -1,23 +1,39 @@
-Editorial by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
+              Y                                          v
+              I                                          I
+             /~\                                        /~\
+            /~~~\                                      /~~~\
+           /~~~~~\                                    /~~~~~\
+         ()~~~~(X)\                                 '/~~~~(X)\ A
+         /\~A~~/ \~\A                             A ()~A~~/ \_/ \
+       /\||/ \_| |_/ \___________________________/_\/\/ \-    ! !
+       !!  ! !     ! !________________________________! !     ! !
+       !!_.! !....-! !                                ! !..-''! ! =.
+      .!! .! !     ! !------------------------------- ! !     ! ! |=.
+    .= !.' ! !....-! !                           ! !..! !...-' V=.| =.
+  .= | ./  \ /     ! !                            V    V       H =.  =..
+.=   .=I    V       V                             I    H       H  |=.  |=.
+|  .=| I_...H.....--H     /----/      \----\      I_...H....-''H  | |=.| |
+..=| | I    H       H    /    //       \ `  \\    I    H       H  | |  =.
+'  | | I    H       H  ./    //         \ `  \\.  I    H       H  | |  | '
+|  | | I    H       H /    .//           \ `  \ \ I    H       H  | |  | |
+|  | | I_...H......-H/    / /             \ `  \ \._...H.....-'H  | |  | |
+|  | | I    H       H   ./ /               \ `  \  \   H       H    |    |
+|  | | I    H       H  /  /                 \ `  \  \..H-------H---+------
+___|___I___ H_______H_/  /                   \ `  \  .-Y-----------+------
+________]  Y          | /                     \ `      I  .'''''.  |
+    |      I   .'''''. /                       \       I (       ) |
+    |      I  (       )                         \      I |   Y   | |
+    |      I  |   Y   |                         |      I |   :   | |
+    |      I  |   :   |                         |      I |   :   | |Meph.
 
-Say hello to Editorial, a blog/magazine-ish template built around a toggleable "locking"
-sidebar (scroll down to see what I mean) and an accordion-style menu. Not the usual landing
-page/portfolio affair you'd expect to see at HTML5 UP, but I figured for my 41st (!!!)
-template I'd change it up a little. Enjoy :)
-
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
+---------------------------------------------------------------------------------------------
 
 Credits:
+
+	Site Template:
+		Editorial by HTML5 UP
+		html5up.net | @ajlkn
 
 	Demo Images:
 		Unsplash (unsplash.com)
