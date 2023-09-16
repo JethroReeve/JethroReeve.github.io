@@ -21,13 +21,13 @@
 			if (index < text.length) {
 				document.getElementById(target).textContent += text.charAt(index);
 				index++;
-				setTimeout(typeText, 250);  // Adjust speed here
+				setTimeout(typeText, 1900);  // Adjust speed here
 			} else {
 				blinkCursor(target);
 				index = 0;
 				currentText++;
 				if (currentText < texts.length) {
-					setTimeout(typeText, 1000);  // Delay before starting next text
+					setTimeout(typeText, 2000);  // Delay before starting next text
 				}
 			}
 		}
