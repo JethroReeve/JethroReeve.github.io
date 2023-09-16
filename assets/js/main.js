@@ -5,6 +5,33 @@
 */
 
 (function($) {
+	const text = "My projects give Labour the data competence needed for 2025";
+	let index = 0;
+	console.log('hi');
+
+	function typeText() {
+		if (index < text.length) {
+			document.getElementById("target").textContent += text.charAt(index);
+			index++;
+			setTimeout(typeText, 100);  // Adjust speed here
+		} else {
+			blinkCursor();
+		}
+	}
+
+	function blinkCursor() {
+		const target = document.getElementById("target");
+		setInterval(() => {
+			if (target.style.borderRightStyle === "solid") {
+				target.style.borderRightStyle = "transparent";
+			} else {
+				target.style.borderRightStyle = "solid";
+			}
+		}, 500);  // Adjust blink speed here
+	}
+
+	typeText();
+
 
 	var	$window = $(window),
 		$head = $('head'),
