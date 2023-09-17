@@ -21,7 +21,7 @@
 			if (index < text.length) {
 				document.getElementById(target).textContent += text.charAt(index);
 				index++;
-				setTimeout(typeText, 250);  // Adjust speed here
+				setTimeout(typeText, 25);  // Adjust speed here
 			} else {
 				index = 0;
 				currentText++;
