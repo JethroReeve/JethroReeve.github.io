@@ -6,7 +6,7 @@
 
 (function($) {
 	const texts = [
-		{text: "provide clarity on political data for 2025", target: "target1"},
+		{text: "provide clarity on political data", target: "target1"},
 		{text: "use AI to give politicians a modern edge", target: "target2"},
 		{text: "support a democracy that thinks twice", target: "target3"}
 	];
