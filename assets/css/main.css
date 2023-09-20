@@ -231,6 +231,7 @@ hr {
 /* Typing */
 .typing {
   white-space: nowrap;
+  word-wrap: break-word;
   overflow: hidden;
 }
 

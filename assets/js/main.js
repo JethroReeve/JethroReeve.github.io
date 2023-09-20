@@ -42,7 +42,7 @@
 					target.style.borderRightStyle = "solid";
 				}
 			});
-		}, 500);  // Adjust blink speed here
+		}, 100);  // Adjust blink speed here
 	}
 	
 	// Start typing the first text
