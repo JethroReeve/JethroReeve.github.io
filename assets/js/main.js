@@ -6,8 +6,8 @@
 
 (function($) {
 	const texts = [
-		{text: "provide clarity on political data", target: "target1"},
-		{text: "use AI to give politicians a modern edge", target: "target2"},
+		{text: "use AI to modernise UK politics", target: "target1"},
+		{text: "use data to measure country goals", target: "target2"},
 		{text: "support a democracy that thinks twice", target: "target3"}
 	];
 	
@@ -26,7 +26,7 @@
 				index = 0;
 				currentText++;
 				if (currentText < texts.length) {
-					setTimeout(typeText, 100);  // Delay before starting next text
+					setTimeout(typeText, 650);  // Delay before starting next text
 				}
 			}
 		}
