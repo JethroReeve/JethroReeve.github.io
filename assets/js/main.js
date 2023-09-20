@@ -6,9 +6,9 @@
 
 (function($) {
 	const texts = [
-		{text: "use AI to modernise UK politics", target: "target1"},
-		{text: "use data to measure country goals", target: "target2"},
-		{text: "support a democracy that thinks twice", target: "target3"}
+		{text: "Use AI to modernise UK politics", target: "target1"},
+		{text: "Measure country goals using data", target: "target2"},
+		{text: "Support a democracy that thinks twice", target: "target3"}
 	];
 	
 	let currentText = 0;
