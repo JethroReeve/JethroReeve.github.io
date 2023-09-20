@@ -27,6 +27,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1; }
 
@@ -2124,15 +2128,24 @@ button,
   #banner h1 {
     margin-top: -0.125em; }
   #banner .content {
-    -moz-flex-grow: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-grow: 1;
-    flex-grow: 1;
-    -moz-flex-shrink: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex-shrink: 1;
-    flex-shrink: 1;
-    width: 50%; }
+  -moz-flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  width: 50%;
+}
+  #banner .content .typing-container {
+    flex: 1;  /* Take available space but also allow to shrink */
+    height: calc(4 * 1.25em * 3.4);
+  }
+  
+  #banner .content .button-container {
+    flex: 0;  /* Do not grow or shrink */
+  }
   #banner .image {
     -moz-flex-grow: 0;
     -webkit-flex-grow: 0;
