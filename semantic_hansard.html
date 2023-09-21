@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hansard Sentiment Analysis 1997-2017 - A First Look</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+									<ul class="icons">
+										<li><a href="https://twitter.com/JethroJethroR" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.linkedin.com/in/jethroreeve/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Unveiling Political Sentiments with ChatGPT: A Dive into Parliamentary Debates</h1>
+									</header>
+
+									<p>Everyone's heard of Hansard for their meticulous recording of Parliamentary debates. <a href="https://data.mendeley.com/datasets/xsvp45cbt4/2">This recently produced dataset</a> offers an unprecedented insight not just into the dialogues but also the underlying emotions of the speakers, allowing for a nuanced analysis of Parliamentary proceedings.</p>
+									<br />
+									<p>NB This whole article, including text and charts, was <a href="#https://chat.openai.com/share/034ac8ef-1403-496d-8326-ff25b98c4180">generated with ChatGPT</a>. It's a pretty shallow argument but I should emphasise... don't take it seriously!</p>
+
+									<hr class="major" />
+									<h2>What’s Happening with the Motions and Speeches?</h2>
+									<p>The Manual Speech Sentiment Polarity embedded in HanDeSeT serves as a barometer measuring the sentiment behind every speech, allowing us to discern whether the discussions were predominantly positive or negative. It reveals the multifaceted aspects of the debates, from the topics introduced to the emotions intertwined with the discourses. This granular approach facilitates an enhanced understanding of the diverse perspectives represented within the Parliament. It shows us what topics were brought up, who talked about them, and how they felt about them. The Manual Speech Sentiment Polarity helps us understand whether the person speaking had a positive or negative view about the topic being discussed.</p>
+									<p>Playing around with the data, we can see that even though Conservatives proposed fewer topics (less than 25% of the motions), they talked nearly as much as the Labour party ministers did. This makes sense given that the Conservatives are the main opposition party to Blair and Brown's governments through most of the period this data is taken from.</p>
+
+									<span class="image post main"><img src="images/1_motions_speeches" alt="" style="width: 300%; max-width: 800px" /></span>
+									
+									<hr class="major" />
+
+									<h2>Voting Divergence: A Reflection of Democratic Values</h2>
+									<p>When we talk about voting, we’re also looking at the way ministers speak about the motions they are voting on. The dataset also gives us instances of party and motion proposer incongruity. This lets us understand ministerial perceptions of inter-party proposals. This is interesting because it helps us understand how ministers feel about ideas coming from other parties.</p>
+									<span class="image post main"><img src="images/2_sentiment_polarity.jpg" alt="" style="width: 300%; max-width: 800px"/></span>
+									<p>This chart visualizes these instances and shows us the distribution of positive and negative sentiments when the motion party affiliation and the speaker's party affiliation do not match. This chart is super important as it gives us a closer look at how often ministers from different parties speak positively or negatively about motions they didn’t propose.</p>
+									<p>So, what does this chart tell us in simpler terms?</p>
+									<ul>
+										<li>It shows that Conservatives, even though they speak a lot on various motions, rarely have positive things to say about motions proposed by other parties. This could be because of strict party discipline, where members are expected to stick to the party line.</li>
+										<li>On the flip side, Labour ministers, along with the DUP and SNP, tend to speak more positively about motions that their party did not propose. This suggests that members of these parties are more open to different ideas and are willing to support good proposals, no matter where they come from.</li>
+										<li>Also, interestingly, Labour ministers are unique in that they sometimes openly disagree with their party. This shows a level of independence and a willingness to prioritize personal beliefs or the needs of their constituents over party loyalty.</li>
+									</ul>
+									<hr class="major" />
+
+									<h2>Speaking Positively, or Not So Much?</h2>
+									<p>Now, here’s where things get spicy. The Conservatives, who talk a lot, rarely say positive things about topics they didn’t bring up.</p>
+									
+									<span class="image main"><img src="images/3_rebellion_proportion_2.jpg" alt="" style="width: 300%; max-width: 800px"/></span>
+									<p>This might be because of the strong control within the party. But Labour ministers are different – they sometimes speak against their party and, like the DUP and SNP, are more likely to speak positively about a topic their party didn’t propose. However Labour ministers are unique in that they sometimes openly disagree even with their own party. This shows a level of independence and a willingness to prioritize personal beliefs or the needs of their constituents over party loyalty.</p>
+
+									<hr class="major" />
+
+									<h2>Wrapping It Up</h2>
+									<p>This deeper look at the chart and the dataset helps us understand that voting against party lines is not just about rebellion; it’s about diverse thinking and being open to ideas, no matter their origin. It’s about ministers genuinely considering the motions and deciding what they believe is the right thing to support, rather than just following the party line.</p>
+									
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
