@@ -2143,7 +2143,7 @@ button,
 }
   #banner .content .typing-container {
     flex: 1;  /* Take available space but also allow to shrink */
-    height: calc(4 * 1.25em * 3.4);
+    height: calc(4 * 1.25em * 3.5);
   }
   
   #banner .content .button-container {
